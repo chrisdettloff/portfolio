@@ -58,6 +58,9 @@ body {
         padding-left: 0;
         text-align: center;
     }
+    #dico {
+        justify-content: center;
+    }
 }
 
 h1 {
@@ -96,9 +99,33 @@ h3 {
     object-position: top;
 }
 
+#dico {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+#dico a {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#dico a:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+}
+
+#dico a:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 3px;
+    border-radius: 50%;
+}
+
 .iico {
     width: 40px;
     height: 40px;
+    display: block;
 }
 
 hr {
